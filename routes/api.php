@@ -18,6 +18,4 @@ Route::get('/hi', function () {
     return response()->json( ['message' => 'Hello World']);
 });
 
-Route::get('/notify', function () {
-    return response()->json( ['message' => 'Hello World']);
-});
+Route::post('/notify', "NotificationController@nofify");
